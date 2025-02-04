@@ -1,0 +1,2 @@
+class CouldNotWriteIntoFileException(BaseException):
+    pass

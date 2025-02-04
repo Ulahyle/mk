@@ -1,0 +1,26 @@
+# Make this code reliable:
+class M:
+# This method greets the user based on whether their name is provided.
+    def do(self, u):
+        if "name" in u:
+            print(f"Welcome {u['name']}!")
+        else:
+            print("Welcome Guest!")
+# This method saves the user's data (name and age) to a file named "data.txt".
+    def save(self, u):
+        with open("data.txt", "a") as f:
+            f.write(f"{u['name']}, {u['age']}\n")
+
+# This method calculates a discounted price given the original price (p)
+# and a discount rate (d).
+    def calc(self, p, d):
+        return p - (p * d)
+
+# Example Usage
+u = {"name": "Alice", "age": 25}  # Example user dictionary containing name and age.
+
+m = M()  # Create an instance of the class.
+
+m.do(u)  # Greet the user using the do() method.
+m.save(u)  # Save the user's data to the file "data.txt".
+print(f"Discounted price: {m.calc(100, 0.1)}")  # Calculate and display a discounted price.

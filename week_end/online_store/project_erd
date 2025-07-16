@@ -1,9 +1,0 @@
-Customer
-   │
-   └──Address
-   │
-   └──Order
-        │
-        └── OrderItem ─── Product
-        │
-        └── Discount
